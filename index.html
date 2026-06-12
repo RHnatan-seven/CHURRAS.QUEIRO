@@ -2,138 +2,46 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meu Perfil</title>
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Churras.Queiro</title>
 <link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
-
 <header class="hero">
-
-<div class="hero-content">
-
-<div>
-<h1>Meu Perfil</h1>
-<p>Tudo sobre seus churrascos</p>
+<div class="overlay">
+<h1>CHURRAS.<span>QUEIRO</span></h1>
+<p>Calculadora realista para seu churrasco</p>
 </div>
-
-<button class="settings-btn">
-<i class="fa-solid fa-gear"></i>
-</button>
-
-</div>
-
 </header>
 
-<section class="profile-card">
-
-<div class="avatar-container">
-
-<div class="avatar">
-🔥
+<main class="container">
+<section class="panel">
+<h2>Pessoas</h2>
+<div class="row">
+<button id="minus">-</button>
+<span id="people">10</span>
+<button id="plus">+</button>
 </div>
 
-<button class="edit-avatar">
-<i class="fa-solid fa-pen"></i>
-</button>
-
+<h2>Duração</h2>
+<div class="row">
+<button class="dur active" data-h="2">2h</button>
+<button class="dur" data-h="4">4h</button>
+<button class="dur" data-h="6">6h+</button>
 </div>
 
-<div class="profile-info">
-
-<h2>Churrasqueiro 🔥</h2>
-
-<p>churrasqueiro@email.com</p>
-
-<div class="badge">
-👑 Mestre da Brasa
-</div>
-
-</div>
-
+<button id="calc">Calcular Churrasco</button>
 </section>
 
-<section class="stats">
-
-<div class="stat">
-<i class="fa-solid fa-fire-burner red"></i>
-<h3>12</h3>
-<p>Churrascos</p>
-</div>
-
-<div class="stat">
-<i class="fa-solid fa-users orange"></i>
-<h3>156</h3>
-<p>Pessoas</p>
-</div>
-
-<div class="stat">
-<i class="fa-solid fa-money-bill-wave green"></i>
-<h3>R$312</h3>
-<p>Economia</p>
-</div>
-
-<div class="stat">
-<i class="fa-solid fa-clipboard-list blue"></i>
-<h3>8</h3>
-<p>Listas</p>
-</div>
-
+<section class="panel">
+<h2>Lista de Compras</h2>
+<div id="lista"></div>
+<h3>Total Estimado: <span id="total"></span></h3>
+<button id="copy">Copiar Lista</button>
+<button onclick="window.print()">Exportar PDF</button>
 </section>
-
-<section class="menu">
-
-<div class="menu-item">
-<div>
-⭐ <strong>Favoritos</strong>
-<p>Itens e promoções salvos</p>
-</div>
-<i class="fa-solid fa-chevron-right"></i>
-</div>
-
-<div class="menu-item">
-<div>
-🕒 <strong>Histórico</strong>
-<p>Compras anteriores</p>
-</div>
-<i class="fa-solid fa-chevron-right"></i>
-</div>
-
-<div class="menu-item">
-<div>
-ℹ️ <strong>Sobre o App</strong>
-<p>Versão 1.0.0</p>
-</div>
-<i class="fa-solid fa-chevron-right"></i>
-</div>
-
-</section>
-
-<button class="logout">
-<i class="fa-solid fa-right-from-bracket"></i>
-Sair da Conta
-</button>
-
-<nav class="bottom-nav">
-
-<a href="#">
-<i class="fa-solid fa-house"></i>
-<span>Início</span>
-</a>
-
-<a href="#" class="active">
-<i class="fa-solid fa-user"></i>
-<span>Perfil</span>
-</a>
-
-</nav>
+</main>
 
 <script src="script.js"></script>
-
 </body>
 </html>
